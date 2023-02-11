@@ -1,0 +1,17 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "my personal project to write daily journals and keep track of my shitty life",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "dragtr0n",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  }
+}
