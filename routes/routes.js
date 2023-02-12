@@ -1,12 +1,14 @@
 const express = require("express")
 const router = express.Router()
 
-router
-    .route("/getAllJournals")
-    .get(getAllJournals)
+const { submitJournal } = require("../controllers/submitJournal")
+
+// router
+//     .route("/getAllJournals")
+//     .get(getAllJournals)
 
 router  
     .route("/submitJournal")
-    .post(submitJournal)    
+    .post(submitJournal)
 
 module.exports = router

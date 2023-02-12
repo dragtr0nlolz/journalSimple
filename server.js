@@ -1,10 +1,10 @@
 const express = require("express")
 const app = express()
-
-const routes = require("./routes/routes")
-
 require("dotenv").config()
+require("./database")
+
 const port = process.env.PORT
+const routes = require("./routes/routes")
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
