@@ -15,6 +15,9 @@ const journalSchema = mongoose.Schema({
         minLength: [5, "Not enough content to save"],
         maxlength: [500, "Sleep bro thats enough"]
     }
+},
+{
+    versionKey: false 
 })
 
 module.exports = mongoose.model("Journal", journalSchema)
